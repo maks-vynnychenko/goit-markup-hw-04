@@ -11,6 +11,7 @@
   --hero-bgd-color: #2f303a;
   --header-border-color: #ececec;
   --portfolio-border-color: #eeeeee;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -308,9 +309,47 @@ section.hero {
   line-height: 1.19;
 
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   text-align: center;
+}
+
+.comand-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.comand-links .item:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.comand-links .item {
+  width: 44px;
+  height: 44px;
+}
+
+.comand-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  fill: var(--icon-color);
+  border-radius: 50%;
+}
+
+.comand-socials:hover,
+.comand-socials:focus {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .comand-desc {
@@ -319,7 +358,7 @@ section.hero {
 
 .clients-list {
   display: flex;
-  justify-content: center;
+
   list-style: none;
 
   margin: 0;
@@ -329,9 +368,6 @@ section.hero {
 .clients-list .item {
   width: 170px;
   height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .clients-list .item:not(:last-child) {
@@ -342,10 +378,18 @@ section.hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   width: 100%;
   height: 100%;
+
+  fill: var(--icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .page-footer {
@@ -393,8 +437,7 @@ section.hero {
 .footer-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
 
   color: var(--white-color);
@@ -411,6 +454,33 @@ section.hero {
   padding: 0;
 
   list-style: none;
+}
+
+.footer-links .item:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.footer-links .item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  fill: var(--white-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials:hover,
+.footer-socials:focus {
+  background-color: var(--accent-color);
 }
 
 .btn-list {
